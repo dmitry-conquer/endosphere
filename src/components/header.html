@@ -1,0 +1,53 @@
+<header class="w-full bg-white sticky top-0 z-[999]">
+  <div class="container flex items-center h-20">
+    <a href="/" class="mr-auto relative z-50">
+      <img src="./img/logo_ukr.webp" alt="" class="w-36">
+    </a>
+    <div class="flex gap-8 lg:gap-12 items-center">
+      <nav
+        id="header-nav"
+        class="lg:static fixed lg:p-0 pt-32 flex flex-col transition-all duration-500 max-lg:-right-[100%] items-center gap-8 max-lg:top-0 max-lg:w-[320px] max-lg:h-screen bg-white">
+        <ul class="flex lg:flex-row flex-col gap-6">
+          <li class="text-center">
+            <a href="" class="uppercase hover:text-primary transition-colors text-base lg:text-sm">ціни</a>
+          </li>
+          <li class="text-center">
+            <a href="" class="uppercase hover:text-primary transition-colors text-base lg:text-sm">результат</a>
+          </li>
+          <li class="text-center">
+            <a href="" class="uppercase hover:text-primary transition-colors text-base lg:text-sm">переваги</a>
+          </li>
+          <li class="text-center">
+            <a href="" class="uppercase hover:text-primary transition-colors text-base lg:text-sm">ціни</a>
+          </li>
+        </ul>
+      </nav>
+      <a
+        data-da="#header-nav,550,last"
+        href="#feedback-form"
+        class="relative rounded px-5 py-2.5 overflow-hidden group bg-primary hover:bg-gradient-to-r hover:from-primary hover:to-primary/90 text-white hover:ring-2 hover:ring-offset-2 hover:ring-primary transition-all ease-out duration-300">
+        <span
+          class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-60 ease"></span>
+        <span class="relative uppercase font-semibold text-sm md:text-base">забронювати зараз</span>
+      </a>
+      <button id="burger-button" class="group relative lg:hidden block">
+        <div class="relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden">
+          <div
+            id="burger-inner"
+            class="flex h-[20px] w-[25px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300">
+            <div class="h-[2px] w-7 origin-left transform bg-dark transition-all duration-300"></div>
+            <div class="h-[2px] w-7 transform rounded bg-dark transition-all delay-75 duration-300"></div>
+            <div class="h-[2px] w-7 origin-left transform bg-dark transition-all delay-150 duration-300"></div>
+
+            <div
+              id="burger-cross"
+              class="absolute top-2.5 flex w-0 -translate-x-10 transform items-center justify-between transition-all duration-500">
+              <div class="absolute h-[2px] w-5 rotate-0 transform bg-dark transition-all delay-300 duration-500"></div>
+              <div class="absolute h-[2px] w-5 -rotate-0 transform bg-dark transition-all delay-300 duration-500"></div>
+            </div>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</header>
