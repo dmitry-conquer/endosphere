@@ -5,18 +5,21 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
+    screens: {
+      xl: "1280px",
+      lg: "1024px",
+      md: "768px",
+      sm: "540px",
+      xs: "375px",
+    },
     extend: {
       colors: {
         primary: {
           DEFAULT: "#c70a0b",
-          100: "#f2d2ce",
           200: "#f4eae3",
+          300: "#CB8F85",
         },
         secondary: {
-          100: "#e6e7e9",
-          200: "#c6d5dc",
-          300: "#9eaec7",
-          400: "#79879f",
         },
         dark: "#212529",
       },
