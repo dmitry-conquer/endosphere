@@ -1,0 +1,1 @@
+import MicroModal from 'micromodal';
