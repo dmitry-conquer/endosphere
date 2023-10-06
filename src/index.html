@@ -22,12 +22,20 @@
           <div class="w-full h-full bg-black/30 absolute left-0 top-0"></div>
           <div class="container relative z-10">
             <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
-              <h1 class="uppercase text-4xl sm:text-5xl text-white font-bold mb-10">ендосфера-терапія</h1>
-              <p class="text-white leading-loose sm:leading-loose">
-                <span class="font-semibold text-3xl"><strong>Ендосфери</strong></span> <br />
-                є інноваційною італійською технологією формування тіла, зменшення целюліту та омолодження шкіри.
-              </p>
+              <h1 class="uppercase text-4xl sm:text-5xl text-white font-bold mb-10" data-aos="fade-up">
+                ендосфера-терапія
+              </h1>
+              <div class="text-white leading-loose sm:leading-loose">
+                <span class="font-semibold text-2xl block mb-2 sm:text-3xl" data-aos="fade-up" data-aos-delay="50"
+                  ><strong>Ендосфери</strong></span
+                >
+                <p data-aos="fade-up" data-aos-delay="150">
+                  є інноваційною італійською технологією формування тіла, зменшення целюліту та омолодження шкіри.
+                </p>
+              </div>
               <a
+                data-aos="fade-up"
+                data-aos-delay="200"
                 href="#feedback-form"
                 class="relative rounded px-5 py-2.5 mt-8 overflow-hidden group bg-primary hover:bg-gradient-to-r hover:from-primary hover:to-primary/90 text-white hover:ring-2 hover:ring-offset-2 hover:ring-primary transition-all ease-out duration-300">
                 <span
@@ -39,20 +47,19 @@
         </section>
 
         <!-- before-after -->
-        <section class="py-20">
+        <section class="py-12 sm:py-20" id="before-after">
           <div class="container py-12 bg-secondary rounded-xl">
             <div class="mx-auto max-w-2xl mb-12">
-              <h2 class="text-3xl font-semibold uppercase text-center mb-6">ЕНДОСФЕРИ ДО | ПІСЛЯ</h2>
+              <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-6">ЕНДОСФЕРИ ДО | ПІСЛЯ</h2>
               <p class="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus nemo sapiente saepe error fuga,
-                laborum atque corrupti magnam reiciendis, autem, quas temporibus voluptas quasi dolore. Sit debitis
-                maxime sed impedit?
+                До процедури ендосфера багато пацієнтів страждали від проблеми втрати тонусу та еластичності шкіри
+                обличчя та тіла. Однак після проведення цієї дивовижної процедури, результати говорять самі за себе.
               </p>
             </div>
-            <div id="before-after" class="w-72 h-72 relative mx-auto">
+            <div id="before-after" class="cursor-pointer w-72 h-72 relative mx-auto">
               <span
                 id="slider-btn"
-                class="bg-primary grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                class="bg-primary cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
                 style="left: 50%">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,25 +74,25 @@
                     d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
                 </svg>
               </span>
-              <input type="range" min="0" max="100" value="50" id="slider" class="" />
+              <div id="slider"></div>
               <div
                 id="before"
                 style="background-image: url('./img/before.webp')"
                 class="h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
               <div
                 id="after"
-                class="h-full bg-red-200 absolute left-0 top-0 bg-no-repeat"
+                class="h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
                 style="width: 50%; background-image: url('./img/after.webp')"></div>
             </div>
           </div>
         </section>
 
         <!-- benefits -->
-        <section class="py-20">
+        <section class="py-12 sm:py-20" id="features">
           <div class="container">
-            <h2 class="text-3xl font-semibold uppercase text-center mb-16">КОРИСНІ ВЛАСТИВОСТІ</h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-16">КОРИСНІ ВЛАСТИВОСТІ</h2>
             <div class="grid gap-x-10 gap-y-16 grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
-              <div class="flex flex-col gap-5 items-center">
+              <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
                 <div
                   class="w-32 h-32 grid bg-secondary-dark transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/heart.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
@@ -98,7 +105,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-5 items-center">
+              <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
                 <div
                   class="w-32 h-32 grid group bg-secondary-dark transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/drop_full.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
@@ -111,7 +118,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-5 items-center">
+              <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
                 <div
                   class="w-32 h-32 grid group bg-secondary-dark transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/remove.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
@@ -123,7 +130,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-5 items-center">
+              <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
                 <div
                   class="w-32 h-32 grid group bg-secondary-dark transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/waves.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
@@ -136,7 +143,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-5 items-center">
+              <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
                 <div
                   class="w-32 h-32 grid group bg-secondary-dark transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/waves2.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
@@ -148,7 +155,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-5 items-center">
+              <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
                 <div
                   class="w-32 h-32 grid group bg-secondary-dark transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/focus.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
@@ -158,7 +165,7 @@
                   <p class="text-center text-sm">Розгладжує зморшки і робить шрами менш помітними.</p>
                 </div>
               </div>
-              <div class="flex flex-col gap-5 items-center">
+              <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
                 <div
                   class="w-32 h-32 grid group bg-secondary-dark transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/body.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
@@ -168,7 +175,7 @@
                   <p class="text-center text-sm">Знімає м'язовий біль після інтенсивних спортивних тренувань.</p>
                 </div>
               </div>
-              <div class="flex flex-col gap-5 items-center">
+              <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
                 <div
                   class="w-32 h-32 grid group bg-secondary-dark transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/layer.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
@@ -183,11 +190,13 @@
         </section>
 
         <!-- info -->
-        <section class="py-20">
+        <section class="py-12 sm:py-20" id="endospheres">
           <div class="container px-4 py-10 sm:p-10 md:p-20 bg-secondary rounded-xl">
-            <h2 class="text-3xl font-semibold uppercase text-center mb-12">Що це за процедура ендосфера?</h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-12">
+              Що це за процедура ендосфера?
+            </h2>
             <div class="flex lg:flex-row flex-col items-center gap-10">
-              <div class="flex flex-col items-center w-full lg:w-1/2">
+              <div class="flex flex-col items-center w-full lg:w-1/2" data-aos="fade-up" data-aos-delay="100">
                 <div>
                   <p>
                     <span><b>Ендосфера</b></span> - це одна з нових апаратних процедур по впливу на шкіру та підшкірні
@@ -210,23 +219,27 @@
                   <span class="relative uppercase font-semibold">забронювати зараз</span>
                 </a>
               </div>
-              <div
-                class="w-full overflow-hidden rounded-xl lg:w-1/2 group hover:scale-95 transition-transform duration-500">
-                <img
-                  src="./img/img1.webp"
-                  alt="Що це за процедура ендосфера?"
-                  class="w-full h-full block object-cover rounded-xl group-hover:scale-110 transition-transform duration-500" />
+              <div class="w-full lg:w-1/2" data-aos="fade-up">
+                <div
+                  class="w-full h-full overflow-hidden rounded-xl group hover:scale-95 transition-transform duration-500">
+                  <img
+                    src="./img/img1.webp"
+                    alt="Що це за процедура ендосфера?"
+                    class="w-full h-full block object-cover rounded-xl group-hover:scale-110 transition-transform duration-500" />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <!-- price -->
-        <section class="py-20">
+        <section class="py-12 sm:py-20" id="price">
           <div class="container">
-            <h2 class="text-3xl font-semibold uppercase text-center mb-16">ЦІНИ</h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-16">ЦІНИ</h2>
             <div class="flex md:flex-row flex-col gap-10">
-              <div class="w-full md:w-1/2 p-6 sm:px-12 sm:py-14 rounded-lg overflow-hidden relative group/card">
+              <div
+                data-aos="fade-up"
+                class="w-full md:w-1/2 p-6 sm:px-12 sm:py-14 rounded-lg overflow-hidden relative group/card">
                 <div
                   class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
                 <img
@@ -238,7 +251,7 @@
                   <p class="flex items-start text-primary mb-7 leading-none">
                     <span class="text-xl">$</span><span class="text-5xl md:text-7xl font-semibold">150</span>
                   </p>
-                  <h3 class="text-3xl font-semibold mb-5">Тільки обличчя</h3>
+                  <h3 class="text-2xl sm:text-3xl font-semibold mb-5">Тільки обличчя</h3>
                   <p class="font-medium text-xl">30 хвилин</p>
                   <a
                     href="#feedback-form"
@@ -249,7 +262,10 @@
                   </a>
                 </div>
               </div>
-              <div class="w-full md:w-1/2 p-6 sm:px-12 sm:py-14 rounded-lg overflow-hidden relative group/card">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="w-full md:w-1/2 p-6 sm:px-12 sm:py-14 rounded-lg overflow-hidden relative group/card">
                 <div
                   class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
                 <img
@@ -261,7 +277,7 @@
                   <p class="flex items-start text-primary mb-7 leading-none">
                     <span class="text-xl">$</span><span class="text-5xl md:text-7xl font-semibold">250</span>
                   </p>
-                  <h3 class="text-3xl font-semibold mb-5">Все тіло</h3>
+                  <h3 class="text-2xl sm:text-3xl font-semibold mb-5">Все тіло</h3>
                   <p class="font-medium text-xl">60 хвилин</p>
                   <a
                     href="#feedback-form"
@@ -277,13 +293,13 @@
         </section>
 
         <!-- how it works -->
-        <section class="py-20">
+        <section class="py-12 sm:py-20">
           <div class="container">
-            <h2 class="text-3xl font-semibold uppercase text-center mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-12">
               Як працює і наскільки ефективна ендосфера ?
             </h2>
             <div class="flex gap-10 items-center lg:flex-row flex-col">
-              <div class="w-full lg:w-1/2">
+              <div data-aos="fade-up" class="w-full lg:w-1/2">
                 <p>
                   <strong>Ендосфера</strong> виконується з допомогою інноваційного приладу. Розробили його італійські
                   вчені. Основні дії виконуються спеціальною насадкою. Вона складається із п'ятдесяти силіконових сфер.
@@ -300,34 +316,50 @@
                   прискорює виведення зайвої рідини з організму.
                 </p>
               </div>
-              <div class="overflow-hidden rounded-xl group hover:scale-95 transition-transform duration-500">
-                <img
-                  src="./img/img3.webp"
-                  alt="Як працює і наскільки ефективна ендосфера ?"
-                  title="Як працює і наскільки ефективна ендосфера ?"
-                  class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
+              <div data-aos="fade-up" data-aos-delay="250" class="w-full lg:w-1/2">
+                <div class="overflow-hidden rounded-xl group hover:scale-95 transition-transform duration-500">
+                  <img
+                    src="./img/img3.webp"
+                    alt="Як працює і наскільки ефективна ендосфера ?"
+                    title="Як працює і наскільки ефективна ендосфера ?"
+                    class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500" />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <!-- not only body -->
-        <section class="py-20">
+        <section class="py-12 sm:py-20">
           <div class="container px-4 py-10 sm:p-20 rounded-xl bg-secondary">
-            <h2 class="text-3xl font-semibold uppercase text-center text-primary/90 mb-8">не тільки тіло</h2>
-            <p class="text-center">
-              <strong>Ендосферна терапія</strong> чудово працює як масаж обличчя - вона корисна як в якості омолоджуючої
-              терапії, так і просто для того, щоб дати обличчю відпочити. Процедура допомагає позбутися в'ялості
-              епідермісу, виражених носогубних складок, зморшок, подвійного підборіддя, птозу, вікових змін на обличчі,
-              напруги мімічних м'язів. Процедура також відновлює рівний і природний тон шкіри обличчя.
-            </p>
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center text-primary/90 mb-8">
+              не тільки тіло
+            </h2>
+            <div class="text-left sm:text-center">
+              <p>
+                <strong>Ендосферна терапія</strong> чудово працює як масаж обличчя - вона корисна як в якості
+                омолоджуючої терапії, так і просто для того, щоб дати обличчю відпочити.
+              </p>
+              <br />
+              <p>
+                Процедура допомагає позбутися в'ялості епідермісу, виражених носогубних складок, зморшок, подвійного
+                підборіддя, птозу, вікових змін на обличчі, напруги мімічних м'язів. Процедура також відновлює рівний і
+                природний тон шкіри обличчя.
+              </p>
+              <br />
+              <p>
+                Процедура є своєрідним масажем, але набагато ефективніше звичайного масажу. Тривалість процедури
+                залежить від площі ділянки, що обробляється. Опрацювання всього тіла займає 60 хвилин, обличчя – 30
+                хвилин.
+              </p>
+            </div>
           </div>
         </section>
 
         <!-- faq -->
-        <section class="py-20">
+        <section class="py-12 sm:py-20" id="faq">
           <div class="container">
-            <h2 class="text-3xl font-semibold uppercase text-center mb-16">залишилися питання?</h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-16">залишилися питання?</h2>
             <div class="space-y-8">
               <div>
                 <div data-spoiler role="button" aria-expanded="false" class="flex items-center gap-6">
@@ -484,7 +516,7 @@
                   <div class="prose-sm sm:prose pl-0 md:pl-11 py-3">
                     <div class="border-l-2 spoiler-content pl-4 border-transparent transition-all">
                       <p>
-                        Ви можете заповнити <a href="#feedback-form" class="hover:underline text-primary">форму</a>, ми
+                        Ви можете заповнити <a href="#feedback-form" class="hover:underline !text-primary">форму</a>, ми
                         зв'яжимося з вами найближчим часом.
                       </p>
                     </div>
@@ -492,6 +524,42 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <!-- form -->
+        <section class="py-12 sm:py-20" id="feedback-form">
+          <div class="container bg-secondary py-10">
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-8">
+              зв'яжіться з нами для уточнення деталей
+            </h2>
+            <form id="form" action="#" class="flex flex-col items-center space-y-4 mx-auto w-full max-w-sm">
+              <div class="w-full">
+                <label for="firstName" class="sr-only">Ім'я</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  placeholder="Ім'я"
+                  class="py-2 px-3 rounded-xl border border-primary/30 w-full focus:outline-none focus:border-primary transition-colors duration-300" />
+                <p id="name-error" class="text-xs pl-3 mt-2 text-primary hidden">Необхідно вказати ім'я</p>
+              </div>
+              <div class="w-full">
+                <label for="tel" class="sr-only">Номер телефону</label>
+                <input
+                  type="text"
+                  id="tel"
+                  placeholder="Номер телефону"
+                  class="py-2 px-3 rounded-xl border border-primary/30 w-full focus:outline-none focus:border-primary transition-colors duration-300" />
+                <p id="tel-error" class="text-xs pl-3 mt-2 text-primary hidden">Некоректний номер телефону!</p>
+              </div>
+              <button
+                type="submit"
+                class="relative rounded px-5 py-2.5 mt-8 overflow-hidden group bg-primary hover:bg-gradient-to-r hover:from-primary hover:to-primary/90 text-white hover:ring-2 hover:ring-offset-2 hover:ring-primary transition-all ease-out duration-300">
+                <span
+                  class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-60 ease"></span>
+                <span class="relative uppercase font-semibold">надіслати</span>
+              </button>
+            </form>
           </div>
         </section>
       </main>

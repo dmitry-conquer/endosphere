@@ -9,6 +9,7 @@ function scroll() {
     toTopButton.classList.remove("is-visible");
   }
 }
+scroll();
 
 function toTop() {
   window.scrollTo({

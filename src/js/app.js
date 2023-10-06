@@ -8,7 +8,7 @@ import { initSpoiler } from "./modules/spoilers.js";
 // import { useDynamicAdapt } from './modules/dynamicAdapt.js';
 // import gsap from "gsap";
 // import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-// import AOS from 'aos';
+import AOS from "aos";
 // import Rellax from "rellax";
 // import fslightbox from 'fslightbox';
 // import Ellipsis from 'ellipsis.js';
@@ -19,10 +19,15 @@ import { initSpoiler } from "./modules/spoilers.js";
 import "./modules/range.js";
 import "./modules/header.js";
 import "./modules/scroll.js";
+import "./modules/formValidate.js";
 import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
 function app() {
   useDynamicAdapt("max");
   initSpoiler();
+  AOS.init({
+    duration: 600,
+    once: true,
+  });
 }
 
 document.addEventListener("DOMContentLoaded", app);
