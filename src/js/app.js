@@ -1,6 +1,6 @@
 // import { consoleInfo, isWebp() } from './config/functions.js';
 // import { hasErrors } from './modules/forms.js';
-// import { initSpoiler, initDdropdown } from './modules/spoilers.js';
+import { initSpoiler } from "./modules/spoilers.js";
 // import { initTabs } from './modules/tabs.js';
 // import { initSliders } from './modules/sliders.js';
 // import { initHeader } from './modules/header.js';
@@ -18,9 +18,11 @@
 // import MicroModal from 'micromodal';
 import "./modules/range.js";
 import "./modules/header.js";
+import "./modules/scroll.js";
 import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
 function app() {
-  useDynamicAdapt('max');
+  useDynamicAdapt("max");
+  initSpoiler();
 }
 
 document.addEventListener("DOMContentLoaded", app);

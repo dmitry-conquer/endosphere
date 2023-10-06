@@ -10,7 +10,6 @@ module.exports = {
       lg: "1024px",
       md: "768px",
       sm: "540px",
-      xs: "375px",
     },
     extend: {
       colors: {
@@ -20,6 +19,8 @@ module.exports = {
           300: "#CB8F85",
         },
         secondary: {
+          DEFAULT: "#eff4f7",
+          dark: "#9ab8cb",
         },
         dark: "#212529",
       },
@@ -28,4 +29,5 @@ module.exports = {
       },
     },
   },
+  plugins: [require("@tailwindcss/typography")],
 };

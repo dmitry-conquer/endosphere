@@ -11,6 +11,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
     @apply font-montserrat text-base font-normal text-dark;
   }
@@ -54,7 +57,28 @@
   }
   #header-nav {
     &.active-menu {
-     @apply max-lg:right-0;
+      @apply max-lg:right-0;
+    }
+  }
+
+  #to-top-btn {
+    &.is-visible {
+      @apply opacity-100 visible;
+    }
+  }
+
+  .active-spoiler {
+    @apply text-primary;
+    .cross-vertical {
+      @apply bg-primary rotate-0;
+    }
+    .cross-horizontal {
+      @apply bg-primary opacity-0;
+    }
+  }
+  .active-spoiler-content {
+    .spoiler-content {
+      @apply border-l-primary
     }
   }
 }
