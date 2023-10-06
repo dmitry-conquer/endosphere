@@ -6,7 +6,7 @@
     <div class="flex gap-8 lg:gap-12 items-center">
       <nav
         id="header-nav"
-        class="lg:static fixed lg:p-0 pt-32 flex flex-col transition-all duration-500 max-lg:-right-[100%] items-center gap-8 max-lg:top-0 max-lg:w-[320px] max-lg:h-screen bg-white">
+        class="lg:static fixed lg:p-0 pt-32 flex flex-col transition-all duration-500 max-lg:-right-[100%] items-center gap-8 max-lg:top-0 max-sm:w-full max-lg:w-[320px] max-lg:min-h-screen bg-white">
         <ul class="flex lg:flex-row flex-col gap-6">
           <li class="text-center">
             <a href="#before-after" class="uppercase hover:text-primary transition-colors text-base lg:text-sm"
@@ -32,8 +32,10 @@
         </ul>
       </nav>
       <a
+        id="header-feedback-link"
         data-da="#header-nav,550,last"
         href="#feedback-form"
+        style="display: none"
         class="relative rounded px-5 py-2.5 overflow-hidden group bg-primary hover:bg-gradient-to-r hover:from-primary hover:to-primary/90 text-white hover:ring-2 hover:ring-offset-2 hover:ring-primary transition-all ease-out duration-300">
         <span
           class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-60 ease"></span>

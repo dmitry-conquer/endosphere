@@ -16,9 +16,6 @@ if (slider) {
   });
 
   slider.noUiSlider.on("update", function (values, handle) {
-    // inputs[handle].value = Math.round(values[handle]); // Передаем значение ползунков в input
-    console.log(values);
-    console.log(handle);
     after.style.width = `${values[0]}%`;
     sliderBtn.style.left = `${values[0]}%`;
   });

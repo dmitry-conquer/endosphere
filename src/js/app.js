@@ -29,5 +29,8 @@ function app() {
     once: true,
   });
 }
+setTimeout(function () {
+  document.getElementById("header-feedback-link").style.display = "block";
+}, 10);
 
 document.addEventListener("DOMContentLoaded", app);
