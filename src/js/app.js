@@ -5,6 +5,7 @@ import "./modules/header.js";
 import "./modules/scroll.js";
 import "./modules/formValidate.js";
 import { useDynamicAdapt } from "./modules/dynamicAdapt.js";
+import fslightbox from "fslightbox";
 function app() {
   useDynamicAdapt("max");
   initSpoiler();

@@ -22,6 +22,9 @@ module.exports = {
           DEFAULT: "#eff4f7",
           dark: "#9ab8cb",
         },
+        tertiary : {
+          DEFAULT: "#f6c4dd",
+        },
         dark: "#212529",
       },
       fontFamily: {
