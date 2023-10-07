@@ -1,4 +1,4 @@
-const targetDate = new Date("2023-12-31 00:00:00").getTime();
+const targetDate = new Date("2023-11-15 00:00:00").getTime();
 const timer = document.getElementById("timer");
 
 if (timer) {
