@@ -1,9 +1,9 @@
-import noUiSlider from "nouislider";
+import noUiSlider from 'nouislider';
 
-const slider = document.getElementById("slider");
-const before = document.getElementById("before");
-const after = document.getElementById("after");
-const sliderBtn = document.getElementById("slider-btn");
+const slider = document.getElementById('slider');
+const before = document.getElementById('before');
+const after = document.getElementById('after');
+const sliderBtn = document.getElementById('slider-btn');
 
 if (slider) {
   noUiSlider.create(slider, {
@@ -15,7 +15,7 @@ if (slider) {
     },
   });
 
-  slider.noUiSlider.on("update", function (values, handle) {
+  slider.noUiSlider.on('update', function (values, handle) {
     after.style.width = `${values[0]}%`;
     sliderBtn.style.left = `${values[0]}%`;
   });

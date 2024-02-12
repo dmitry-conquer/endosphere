@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb-base"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["import"],
+
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".mjs", ".js", ".json"]
+      }
+    },
+    "import/extensions": [".js", ".mjs", ".jsx"],
+    "moduleDirectory": ["src", "node_modules"],
+    "import/core-modules": [],
+    "import/ignore": ["node_modules", "\\.(coffee|scss|css|less|hbs|svg|json)$"]
+  },
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "linebreak-style": 0,
+    "no-plusplus": "off",
+    "arrow-parens": "off",
+    "import/no-extraneous-dependencies": "off"
+  }
+}

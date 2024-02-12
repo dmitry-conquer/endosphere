@@ -6,9 +6,7 @@
       @@include('components/header.html', { })
       <main>
         <!-- hero section -->
-        <section
-          style="background-image: url('./img/hero.webp')"
-          class="bg-no-repeat bg-cover py-32 sm:py-48 lg:py-60 bg-bottom relative overflow-hidden">
+        <section style="background-image: url('./img/hero.webp')" class="bg-no-repeat bg-cover py-32 sm:py-48 lg:py-60 bg-bottom relative overflow-hidden">
           <div class="absolute h-12 w-full rotate-180 bottom-0 left-0 z-20">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
               <path
@@ -24,10 +22,7 @@
             <div class="flex flex-col items-center text-center max-w-2xl mx-auto">
               <h1 class="uppercase text-4xl sm:text-5xl text-white font-bold mb-6" data-aos="fade-up">ендосфера</h1>
               <div class="text-white leading-loose sm:leading-loose">
-                <p
-                  data-aos="fade-up"
-                  data-aos-delay="150"
-                  class="font-medium p-3 bg-primary/[0.08] sm:bg-primary/10 rounded-xl backdrop-blur-[1px] sm:backdrop-blur-sm">
+                <p data-aos="fade-up" data-aos-delay="150" class="font-medium p-3 bg-primary/[0.08] sm:bg-primary/10 rounded-xl backdrop-blur-[1px] sm:backdrop-blur-sm">
                   інноваційна італійська технологія корегування фігури, зменшення целюліту та омолодження шкіри
                 </p>
               </div>
@@ -42,14 +37,9 @@
               </a>
               <div data-aos="fade-up" data-aos-delay="250" class="mt-10 flex flex-col items-center transition-opacity">
                 <p class="text-white font-medium text-2xl text-center mb-3">
-                  Акція <span class="py-1 px-2 bg-primary text-white font-medium rounded-md">-70%</span> закінчується
-                  через
+                  Акція <span class="py-1 px-2 bg-primary text-white font-medium rounded-md">-70%</span> закінчується через
                 </p>
-                <div
-                  id="timer"
-                  class="bg-white text-sm text-primary py-3 px-5 rounded font-semibold flex justify-center">
-                  --:--:--
-                </div>
+                <div id="timer" class="bg-white text-sm text-primary py-3 px-5 rounded font-semibold flex justify-center">--:--:--</div>
               </div>
             </div>
           </div>
@@ -61,8 +51,8 @@
             <div class="mx-auto max-w-2xl mb-12">
               <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-6">ЕНДОСФЕРИ ДО | ПІСЛЯ</h2>
               <p class="text-center">
-                До процедури ендосфера багато пацієнтів страждали від проблеми втрати тонусу та еластичності шкіри
-                обличчя та тіла. Однак після проведення цієї дивовижної процедури, результати говорять самі за себе.
+                До процедури ендосфера багато пацієнтів страждали від проблеми втрати тонусу та еластичності шкіри обличчя та тіла. Однак після проведення цієї дивовижної
+                процедури, результати говорять самі за себе.
               </p>
             </div>
             <div id="before-after" class="cursor-pointer w-72 h-72 relative mx-auto">
@@ -70,24 +60,12 @@
                 id="slider-btn"
                 class="bg-primary cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
                 style="left: 50%">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.9"
-                  stroke="currentColor"
-                  class="w-4 h-4 text-white">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
                 </svg>
               </span>
               <div id="slider"></div>
-              <div
-                id="before"
-                style="background-image: url('./img/after.webp')"
-                class="h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+              <div id="before" style="background-image: url('./img/after.webp')" class="h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
               <div
                 id="after"
                 class="h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
@@ -96,26 +74,219 @@
           </div>
         </section>
 
+        <!-- before-after-slider -->
+        <section class="py-8 sm:py-14" id="before-after">
+          <div class="container py-12 bg-secondary rounded-xl">
+            <div class="mx-auto max-w-2xl mb-12">
+              <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-6">ЕНДОСФЕРИ ДО | ПІСЛЯ</h2>
+              <p class="text-center">
+                До процедури ендосфера багато пацієнтів страждали від проблеми втрати тонусу та еластичності шкіри обличчя та тіла. Однак після проведення цієї дивовижної
+                процедури, результати говорять самі за себе.
+              </p>
+            </div>
+            <div id="buttons-holder-mob" class="flex justify-between"></div>
+            <div class="slider-ba w-full overflow-hidden block md:flex items-center gap-x-5 relative pb-20 -mb-16">
+              <button
+                data-da="#buttons-holder-mob,767.98,first"
+                class="prev-slide z-[100] [&.swiper-button-disabled]:opacity-10 hover:bg-primary/70 transition-colors grid place-content-center w-10 h-10 rounded-full shrink-0 bg-primary -rotate-90 static md:absolute top-1/2 -translate-y-1/2 left-[20%] lg:left-[27%]"
+                type="button"
+                aria-label="Prev slide">
+                <svg class="w-6 h-6 stroke-white">
+                  <use href="./sprites/sprite.svg#icon-arrow_up"></use>
+                </svg>
+              </button>
+              <div class="slider-ba-wrapper flex w-full">
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+                <div class="slider-ba-slide w-full shrink-0">
+                  <div class="cursor-pointer w-72 h-72 relative mx-auto">
+                    <span
+                      class="bg-primary range-slider-btn cursor-pointer grid place-content-center rounded-full w-6 h-6 absolute top-1/2 pointer-events-none -translate-y-1/2 -translate-x-1/2 z-[200]"
+                      style="left: 50%">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-4 h-4 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                      </svg>
+                    </span>
+                    <div class="range-slider"></div>
+                    <div style="background-image: url('./img/after.webp')" class="before-part h-full bg-secondary w-full absolute left-0 top-0 bg-no-repeat"></div>
+                    <div
+                      class="after-part h-full bg-red-200 absolute left-0 top-0 bg-no-repeat border-r-[3px] border-white"
+                      style="width: 50%; background-image: url('./img/before.webp')"></div>
+                  </div>
+                </div>
+              </div>
+              <button
+                data-da="#buttons-holder-mob,767.98,last"
+                class="next-slide z-[100] [&.swiper-button-disabled]:opacity-10 hover:bg-primary/70 transition-colors grid place-content-center w-10 h-10 rounded-full shrink-0 bg-primary rotate-90 static md:absolute top-1/2 -translate-y-1/2 right-[20%] lg:right-[27%]"
+                type="button"
+                aria-label="Prev slide">
+                <svg class="w-6 h-6 stroke-white">
+                  <use href="./sprites/sprite.svg#icon-arrow_up"></use>
+                </svg>
+              </button>
+              <div class="pagination !w-[200px] flex justify-center absolute !bottom-10 left-1/2"></div>
+            </div>
+          </div>
+        </section>
+
         <!-- info -->
         <section class="py-8 sm:py-14" id="endospheres">
           <div class="container px-4 py-10 sm:p-10 md:p-20 bg-secondary rounded-xl">
-            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-12">
-              Що це за процедура ендосфера?
-            </h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-12">Що це за процедура ендосфера?</h2>
             <div class="flex lg:flex-row flex-col items-center gap-10">
               <div class="flex flex-col items-center w-full lg:w-1/2" data-aos="fade-up" data-aos-delay="100">
                 <div>
                   <p>
-                    <span><b>Ендосфера</b></span> - це одна з нових апаратних процедур по впливу на шкіру та підшкірні
-                    тканини. Була розроблена та спочатку використовувалася для відновлення професійних спортсменів після
-                    тренувань.
+                    <span><b>Ендосфера</b></span> - це одна з нових апаратних процедур по впливу на шкіру та підшкірні тканини. Була розроблена та спочатку використовувалася для
+                    відновлення професійних спортсменів після тренувань.
                   </p>
                   <br />
                   <p>
-                    За допомогою спеціального приладу виконувався глибокий масаж м'язів, що прискорювало кровообіг і
-                    виведення молочної кислоти. Згодом ця методика показала свою ефективність і її почали
-                    використовувати в медицині для реабілітації пацієнтів після травм, а також у косметології для
-                    боротьби з целюлітом та омолодження організму.
+                    За допомогою спеціального приладу виконувався глибокий масаж м'язів, що прискорювало кровообіг і виведення молочної кислоти. Згодом ця методика показала свою
+                    ефективність і її почали використовувати в медицині для реабілітації пацієнтів після травм, а також у косметології для боротьби з целюлітом та омолодження
+                    організму.
                   </p>
                 </div>
                 <a
@@ -150,71 +321,52 @@
             <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-16">КОРИСНІ ВЛАСТИВОСТІ</h2>
             <div class="grid gap-x-10 gap-y-16 grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
               <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
-                <div
-                  class="w-32 h-32 grid bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
+                <div class="w-32 h-32 grid bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/heart.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
                 </div>
                 <div>
                   <h2 class="text-lg font-semibold text-center mb-3">Зміцнює кровоносні судини</h2>
-                  <p class="text-center text-sm">
-                    Зміцнення кровоносних судин, профілактика варикозного розширення вен. Покращення місцевого
-                    кровообігу.
-                  </p>
+                  <p class="text-center text-sm">Зміцнення кровоносних судин, профілактика варикозного розширення вен. Покращення місцевого кровообігу.</p>
                 </div>
               </div>
               <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
-                <div
-                  class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
+                <div class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/drop_full.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
                 </div>
                 <div>
                   <h2 class="text-lg font-semibold text-center mb-3">Запобігає та лікує застійні процеси</h2>
-                  <p class="text-center text-sm">
-                    Завдяки лімфодренажному масажу запобігає та лікує застійні явища в лімфатичній системі. Зменшує
-                    затримку рідини в організмі.
-                  </p>
+                  <p class="text-center text-sm">Завдяки лімфодренажному масажу запобігає та лікує застійні явища в лімфатичній системі. Зменшує затримку рідини в організмі.</p>
                 </div>
               </div>
               <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
-                <div
-                  class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
+                <div class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/remove.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
                 </div>
                 <div>
                   <h2 class="text-lg font-semibold text-center mb-3">Видаляє жирові відкладення</h2>
-                  <p class="text-center text-sm">
-                    Прибирає жирові відкладення, візуально зменшуючи об'єми та коригуючи контури фігури.
-                  </p>
+                  <p class="text-center text-sm">Прибирає жирові відкладення, візуально зменшуючи об'єми та коригуючи контури фігури.</p>
                 </div>
               </div>
               <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
-                <div
-                  class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
+                <div class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/waves.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
                 </div>
                 <div>
                   <h2 class="text-lg font-semibold text-center mb-3">Покращує стан шкіри в'ялість</h2>
-                  <p class="text-center text-sm">
-                    Ендосферотерапія ефективно покращує в'ялість шкіри. Шкіра швидко підтягується, а кількість розтяжок
-                    зменшується.
-                  </p>
+                  <p class="text-center text-sm">Ендосферотерапія ефективно покращує в'ялість шкіри. Шкіра швидко підтягується, а кількість розтяжок зменшується.</p>
                 </div>
               </div>
               <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
-                <div
-                  class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
+                <div class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/waves2.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
                 </div>
                 <div>
                   <h2 class="text-lg font-semibold text-center mb-3">Бореться з деформаціями</h2>
-                  <p class="text-center text-sm">
-                    Успішно бореться з деформаціями фіброзної тканини, значно зменшує целюліт.
-                  </p>
+                  <p class="text-center text-sm">Успішно бореться з деформаціями фіброзної тканини, значно зменшує целюліт.</p>
                 </div>
               </div>
               <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
-                <div
-                  class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
+                <div class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/focus.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
                 </div>
                 <div>
@@ -223,8 +375,7 @@
                 </div>
               </div>
               <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
-                <div
-                  class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
+                <div class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/body.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
                 </div>
                 <div>
@@ -233,8 +384,7 @@
                 </div>
               </div>
               <div class="flex flex-col gap-5 items-center" data-aos="fade-up">
-                <div
-                  class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
+                <div class="w-32 h-32 grid group bg-primary transition-all duration-300 place-content-center rounded-xl hover:scale-[1.02]">
                   <img src="./img/icons/layer.svg" alt="Зміцнює судини" title="Зміцнює судини" class="w-24 h-24" />
                 </div>
                 <div>
@@ -251,15 +401,11 @@
           <div class="container">
             <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-16">ЦІНИ</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div
-                data-aos="fade-up"
-                class="p-6 flex flex-colsm:px-12 sm:py-14 rounded-xl overflow-hidden relative group/card">
-                <div
-                  class="z-[200] absolute right-3 top-3 sm:right-5 sm:top-5 font-medium text-base sm:text-lg leading-none bg-primary px-3 py-1 lg:py-2 text-white rounded-xl">
+              <div data-aos="fade-up" class="p-6 flex flex-colsm:px-12 sm:py-14 rounded-xl overflow-hidden relative group/card">
+                <div class="z-[200] absolute right-3 top-3 sm:right-5 sm:top-5 font-medium text-base sm:text-lg leading-none bg-primary px-3 py-1 lg:py-2 text-white rounded-xl">
                   -70%
                 </div>
-                <div
-                  class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
+                <div class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
                 <img
                   src="./img/img2.webp"
                   alt="Тільки обличчя"
@@ -281,15 +427,11 @@
                   </a>
                 </div>
               </div>
-              <div
-                data-aos="fade-up"
-                class="p-6 flex flex-colsm:px-12 sm:py-14 rounded-xl overflow-hidden relative group/card">
-                <div
-                  class="z-[200] absolute right-3 top-3 sm:right-5 sm:top-5 font-medium text-base sm:text-lg leading-none bg-primary px-3 py-1 lg:py-2 text-white rounded-xl">
+              <div data-aos="fade-up" class="p-6 flex flex-colsm:px-12 sm:py-14 rounded-xl overflow-hidden relative group/card">
+                <div class="z-[200] absolute right-3 top-3 sm:right-5 sm:top-5 font-medium text-base sm:text-lg leading-none bg-primary px-3 py-1 lg:py-2 text-white rounded-xl">
                   -70%
                 </div>
-                <div
-                  class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
+                <div class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
                 <img
                   src="./img/img5.webp"
                   alt="Тільки обличчя"
@@ -311,15 +453,11 @@
                   </a>
                 </div>
               </div>
-              <div
-                data-aos="fade-up"
-                class="p-6 flex flex-colsm:px-12 sm:py-14 rounded-xl overflow-hidden relative group/card">
-                <div
-                  class="z-[200] absolute right-3 top-3 sm:right-5 sm:top-5 font-medium text-base sm:text-lg leading-none bg-primary px-3 py-1 lg:py-2 text-white rounded-xl">
+              <div data-aos="fade-up" class="p-6 flex flex-colsm:px-12 sm:py-14 rounded-xl overflow-hidden relative group/card">
+                <div class="z-[200] absolute right-3 top-3 sm:right-5 sm:top-5 font-medium text-base sm:text-lg leading-none bg-primary px-3 py-1 lg:py-2 text-white rounded-xl">
                   -70%
                 </div>
-                <div
-                  class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
+                <div class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
                 <img
                   src="./img/img1.webp"
                   alt="Тільки обличчя"
@@ -359,15 +497,11 @@
                   </a>
                 </div>
               </div>
-              <div
-                data-aos="fade-up"
-                class="p-6 flex flex-colsm:px-12 sm:py-14 rounded-xl overflow-hidden relative group/card">
-                <div
-                  class="z-[200] absolute right-3 top-3 sm:right-5 sm:top-5 font-medium text-base sm:text-lg leading-none bg-primary px-3 py-1 lg:py-2 text-white rounded-xl">
+              <div data-aos="fade-up" class="p-6 flex flex-colsm:px-12 sm:py-14 rounded-xl overflow-hidden relative group/card">
+                <div class="z-[200] absolute right-3 top-3 sm:right-5 sm:top-5 font-medium text-base sm:text-lg leading-none bg-primary px-3 py-1 lg:py-2 text-white rounded-xl">
                   -70%
                 </div>
-                <div
-                  class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
+                <div class="absolute left-0 top-0 w-full h-full z-10 bg-white/50 group-hover/card:bg-white/30 duration-500 transition-colors"></div>
                 <img
                   src="./img/img4.webp"
                   alt="Тільки обличчя"
@@ -418,26 +552,20 @@
         <!-- how it works -->
         <section class="py-8 sm:py-14">
           <div class="container">
-            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-12">
-              Як працює і наскільки ефективна ендосфера ?
-            </h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center mb-12">Як працює і наскільки ефективна ендосфера ?</h2>
             <div class="flex gap-10 items-center lg:flex-row flex-col">
               <div data-aos="fade-up" class="w-full lg:w-1/2">
                 <p>
-                  <strong>Ендосфера</strong> виконується з допомогою інноваційного приладу. Розробили його італійські
-                  вчені. Основні дії виконуються спеціальною насадкою. Вона складається із п'ятдесяти силіконових сфер.
-                  Вони розташовані за принципом будови бджолиних сот.
+                  <strong>Ендосфера</strong> виконується з допомогою інноваційного приладу. Розробили його італійські вчені. Основні дії виконуються спеціальною насадкою. Вона
+                  складається із п'ятдесяти силіконових сфер. Вони розташовані за принципом будови бджолиних сот.
                 </p>
                 <br />
                 <p>
-                  Під час роботи сфери обертаються і створюють низькочастотну вібрацію різних видів. Частоту обертання
-                  силіконових сфер виставляють індивідуально до різних ділянок тіла.
+                  Під час роботи сфери обертаються і створюють низькочастотну вібрацію різних видів. Частоту обертання силіконових сфер виставляють індивідуально до різних ділянок
+                  тіла.
                 </p>
                 <br />
-                <p>
-                  Крім цього, відбувається здавлювання шкіри, що сприяє циркуляції крові, спалюванню жиру, а також
-                  прискорює виведення зайвої рідини з організму.
-                </p>
+                <p>Крім цього, відбувається здавлювання шкіри, що сприяє циркуляції крові, спалюванню жиру, а також прискорює виведення зайвої рідини з організму.</p>
               </div>
               <div data-aos="fade-up" data-aos-delay="250" class="w-full lg:w-1/2">
                 <div class="overflow-hidden rounded-xl group hover:scale-95 transition-transform duration-500">
@@ -455,25 +583,21 @@
         <!-- not only body -->
         <section class="py-8 sm:py-14">
           <div class="container px-4 py-10 sm:p-20 rounded-xl bg-secondary">
-            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center text-primary/90 mb-8">
-              не тільки тіло
-            </h2>
+            <h2 class="text-2xl sm:text-3xl font-semibold uppercase text-center text-primary/90 mb-8">не тільки тіло</h2>
             <div class="text-left sm:text-center">
               <p>
-                <strong>Ендосферна терапія</strong> чудово працює як масаж обличчя - вона корисна як в якості
-                омолоджуючої терапії, так і просто для того, щоб дати обличчю відпочити.
+                <strong>Ендосферна терапія</strong> чудово працює як масаж обличчя - вона корисна як в якості омолоджуючої терапії, так і просто для того, щоб дати обличчю
+                відпочити.
               </p>
               <br />
               <p>
-                Процедура допомагає позбутися в'ялості епідермісу, виражених носогубних складок, зморшок, подвійного
-                підборіддя, птозу, вікових змін на обличчі, напруги мімічних м'язів. Процедура також відновлює рівний і
-                природний тон шкіри обличчя.
+                Процедура допомагає позбутися в'ялості епідермісу, виражених носогубних складок, зморшок, подвійного підборіддя, птозу, вікових змін на обличчі, напруги мімічних
+                м'язів. Процедура також відновлює рівний і природний тон шкіри обличчя.
               </p>
               <br />
               <p>
-                Процедура є своєрідним масажем, але набагато ефективніше звичайного масажу. Тривалість процедури
-                залежить від площі ділянки, що обробляється. Опрацювання всього тіла займає 60 хвилин, обличчя – 30
-                хвилин.
+                Процедура є своєрідним масажем, але набагато ефективніше звичайного масажу. Тривалість процедури залежить від площі ділянки, що обробляється. Опрацювання всього
+                тіла займає 60 хвилин, обличчя – 30 хвилин.
               </p>
             </div>
             <div class="flex justify-center mt-4">
@@ -496,8 +620,7 @@
               <div>
                 <div data-spoiler role="button" aria-expanded="false" class="flex items-center gap-6">
                   <div class="cross pointer-events-none">
-                    <span
-                      class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
+                    <span class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
                     <span class="block cross-horizontal h-0.5 w-3 rounded-xl bg-dark transition duration-300"></span>
                   </div>
                   <h3 class="text-xl sm:text-2xl font-medium pointer-events-none">Як проходить процедура?</h3>
@@ -506,11 +629,9 @@
                   <div class="prose-sm sm:prose pl-0 md:pl-11 py-3">
                     <div class="border-l-2 spoiler-content pl-4 border-transparent transition-all">
                       <p>
-                        <strong>Ендосферна терапія</strong> проводить досвідчений косметолог. Він визначає сфери, які
-                        потрібно ретельно опрацювати. Розумна машина сканує естетичні недосконалості, автоматично
-                        регулюючи тиск і швидкість обертання. Ці параметри відображаються на вбудованому екрані. Наші
-                        співробітники клініки проводять сеанси за протоколами, які неодноразово перевірялися та
-                        виявились ефективними.
+                        <strong>Ендосферна терапія</strong> проводить досвідчений косметолог. Він визначає сфери, які потрібно ретельно опрацювати. Розумна машина сканує естетичні
+                        недосконалості, автоматично регулюючи тиск і швидкість обертання. Ці параметри відображаються на вбудованому екрані. Наші співробітники клініки проводять
+                        сеанси за протоколами, які неодноразово перевірялися та виявились ефективними.
                       </p>
                       <h4>Процедура включає 3 етапи</h4>
                       <ol class="!list-decimal">
@@ -519,9 +640,8 @@
                         <li>дослідження маніпулятором проблемних ділянок тіла.</li>
                       </ol>
                       <p>
-                        Результат ендосфери просто дивовижний за своєю видимістю. При переміщенні маніпулятора
-                        стимулюється синтез колагену з еластином, стимулюються м’язові рецептори та покращується
-                        мікроциркуляція. Завдяки цій процедурі товщина м’язової тканини збільшується.
+                        Результат ендосфери просто дивовижний за своєю видимістю. При переміщенні маніпулятора стимулюється синтез колагену з еластином, стимулюються м’язові
+                        рецептори та покращується мікроциркуляція. Завдяки цій процедурі товщина м’язової тканини збільшується.
                       </p>
                     </div>
                   </div>
@@ -531,8 +651,7 @@
               <div>
                 <div data-spoiler role="button" aria-expanded="false" class="flex items-center gap-6">
                   <div class="cross pointer-events-none">
-                    <span
-                      class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
+                    <span class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
                     <span class="block cross-horizontal h-0.5 w-3 rounded-xl bg-dark transition duration-300"></span>
                   </div>
                   <h3 class="text-xl sm:text-2xl font-medium pointer-events-none">Для кого процедура?</h3>
@@ -541,10 +660,9 @@
                   <div class="prose-sm sm:prose pl-0 md:pl-11 py-3">
                     <div class="border-l-2 spoiler-content pl-4 border-transparent transition-all">
                       <p>
-                        Процедура підходить для тих, хто хоче позбутися целюліту, покращити силует тіла, затягнути шкіру
-                        після швидкого схуднення або пологів, і відновити молодь до шкіри обличчя. Але він також
-                        підходить як терапевтичний масаж для тісних м’язів у спортсменів та людей із малорухливим
-                        способом життя, спина та поперек яких оніміли.
+                        Процедура підходить для тих, хто хоче позбутися целюліту, покращити силует тіла, затягнути шкіру після швидкого схуднення або пологів, і відновити молодь до
+                        шкіри обличчя. Але він також підходить як терапевтичний масаж для тісних м’язів у спортсменів та людей із малорухливим способом життя, спина та поперек яких
+                        оніміли.
                       </p>
                     </div>
                   </div>
@@ -553,21 +671,15 @@
               <div>
                 <div data-spoiler role="button" aria-expanded="false" class="flex items-center gap-6">
                   <div class="cross pointer-events-none">
-                    <span
-                      class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
+                    <span class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
                     <span class="block cross-horizontal h-0.5 w-3 rounded-xl bg-dark transition duration-300"></span>
                   </div>
-                  <h3 class="text-xl sm:text-2xl font-medium pointer-events-none">
-                    Чим ендофери відрізняються від інших пристроїв?
-                  </h3>
+                  <h3 class="text-xl sm:text-2xl font-medium pointer-events-none">Чим ендофери відрізняються від інших пристроїв?</h3>
                 </div>
                 <div aria-hidden="true" class="overflow-hidden max-h-0 transition-all duration-300">
                   <div class="prose-sm sm:prose pl-0 md:pl-11 py-3">
                     <div class="border-l-2 spoiler-content pl-4 border-transparent transition-all">
-                      <p>
-                        На відміну від інших пристроїв для формування тіла, таких як LPG, Tri-Active та Vela, Терапія
-                        ендосфер має складний вплив на організм:
-                      </p>
+                      <p>На відміну від інших пристроїв для формування тіла, таких як LPG, Tri-Active та Vela, Терапія ендосфер має складний вплив на організм:</p>
                       <h4></h4>
                       <ul class="!list-disc">
                         <li>Має лімфатичний дренажний ефект – видаляє зайву рідину</li>
@@ -575,10 +687,7 @@
                         <li>Допомагає виводити токсини з організму</li>
                         <li>Стимулює вироблення молодіжних білків еластину та колагену в шкірі</li>
                       </ul>
-                      <p>
-                        Процедуру можна успішно поєднувати з іншими косметичними методами – мезотерапією, обгортанням,
-                        фотореювенацією – ефективність якої лише зростає.
-                      </p>
+                      <p>Процедуру можна успішно поєднувати з іншими косметичними методами – мезотерапією, обгортанням, фотореювенацією – ефективність якої лише зростає.</p>
                     </div>
                   </div>
                 </div>
@@ -586,8 +695,7 @@
               <div>
                 <div data-spoiler role="button" aria-expanded="false" class="flex items-center gap-6">
                   <div class="cross pointer-events-none">
-                    <span
-                      class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
+                    <span class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
                     <span class="block cross-horizontal h-0.5 w-3 rounded-xl bg-dark transition duration-300"></span>
                   </div>
                   <h3 class="text-xl sm:text-2xl font-medium pointer-events-none">Скільки сеансів потрібно?</h3>
@@ -596,13 +704,12 @@
                   <div class="prose-sm sm:prose pl-0 md:pl-11 py-3">
                     <div class="border-l-2 spoiler-content pl-4 border-transparent transition-all">
                       <p>
-                        Повний хід процедур коливається від 6 до 12, залежно від складності проблем. Але позитивний
-                        результат видно після першої сесії. Подальші сесії покращують результат.
+                        Повний хід процедур коливається від 6 до 12, залежно від складності проблем. Але позитивний результат видно після першої сесії. Подальші сесії покращують
+                        результат.
                       </p>
                       <p>
-                        З коригувальним курсом рекомендується проводити 2 сесії на тиждень. З курсом технічного
-                        обслуговування достатньо 1 сеансу на тиждень. Ви можете повторити курси в будь-який зручний час.
-                        Це зведе до мінімуму появу целюліту.
+                        З коригувальним курсом рекомендується проводити 2 сесії на тиждень. З курсом технічного обслуговування достатньо 1 сеансу на тиждень. Ви можете повторити
+                        курси в будь-який зручний час. Це зведе до мінімуму появу целюліту.
                       </p>
                     </div>
                   </div>
@@ -612,21 +719,17 @@
               <div>
                 <div data-spoiler role="button" aria-expanded="false" class="flex items-center gap-6">
                   <div class="cross pointer-events-none">
-                    <span
-                      class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
+                    <span class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
                     <span class="block cross-horizontal h-0.5 w-3 rounded-xl bg-dark transition duration-300"></span>
                   </div>
-                  <h3 class="text-xl sm:text-2xl font-medium pointer-events-none">
-                    Скільки триває антицелюлітний ефект процедур?
-                  </h3>
+                  <h3 class="text-xl sm:text-2xl font-medium pointer-events-none">Скільки триває антицелюлітний ефект процедур?</h3>
                 </div>
                 <div aria-hidden="true" class="overflow-hidden max-h-0 transition-all duration-300">
                   <div class="prose-sm sm:prose pl-0 md:pl-11 py-3">
                     <div class="border-l-2 spoiler-content pl-4 border-transparent transition-all">
                       <p>
-                        Якщо після курсу нічого не буде зроблено, ефект триватиме від чотирьох до 6 місяців, залежно від
-                        факторів майбутніх факторів способу життя та загального стану пацієнта. Прекрасний зовнішній
-                        вигляд - це здоровий спосіб життя та техніка терапії ендосферою.
+                        Якщо після курсу нічого не буде зроблено, ефект триватиме від чотирьох до 6 місяців, залежно від факторів майбутніх факторів способу життя та загального
+                        стану пацієнта. Прекрасний зовнішній вигляд - це здоровий спосіб життя та техніка терапії ендосферою.
                       </p>
                     </div>
                   </div>
@@ -636,21 +739,15 @@
               <div>
                 <div data-spoiler role="button" aria-expanded="false" class="flex items-center gap-6">
                   <div class="cross pointer-events-none">
-                    <span
-                      class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
+                    <span class="block cross-vertical h-0.5 w-3 translate-y-0.5 rotate-90 rounded-xl bg-dark transition duration-300"></span>
                     <span class="block cross-horizontal h-0.5 w-3 rounded-xl bg-dark transition duration-300"></span>
                   </div>
-                  <h3 class="text-xl sm:text-2xl font-medium pointer-events-none">
-                    Як я можу записатися на процедуру?
-                  </h3>
+                  <h3 class="text-xl sm:text-2xl font-medium pointer-events-none">Як я можу записатися на процедуру?</h3>
                 </div>
                 <div aria-hidden="true" class="overflow-hidden max-h-0 transition-all duration-300">
                   <div class="prose-sm sm:prose pl-0 md:pl-11 py-3">
                     <div class="border-l-2 spoiler-content pl-4 border-transparent transition-all">
-                      <p>
-                        Ви можете заповнити <a href="#feedback-form" class="hover:underline !text-primary">форму</a>, ми
-                        зв'яжимося з вами найближчим часом.
-                      </p>
+                      <p>Ви можете заповнити <a href="#feedback-form" class="hover:underline !text-primary">форму</a>, ми зв'яжимося з вами найближчим часом.</p>
                     </div>
                   </div>
                 </div>

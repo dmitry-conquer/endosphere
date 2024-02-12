@@ -51,7 +51,7 @@
     "postcss-combine-media-query": "^1.0.1",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
-    "swiper": "=8.4.7",
+    "swiper": "^11.0.6",
     "vinyl-ftp": "^0.6.1",
     "webpack": "^5.83.1",
     "webpack-stream": "^7.0.0"
